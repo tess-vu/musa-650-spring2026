@@ -1,12 +1,12 @@
 # Geospatial Machine Learning in Remote Sensing (MUSA 650)
 
-[Overview](#overview) | [Objectives](#objectives) | [Format](#format) | [Tips](#tips-for-success) | [Grading](#grading) | [Software](#software) | [Schedule](#schedule) | [Academic Integrity](#academic-integrity-and-ai-use)
+[Overview](#overview) | [Objectives](#objectives) | [Schedule](#schedule) | [Tips](#tips-for-success) | [Assignments](#assignments) | [Software](#software) | [Academic Integrity](#academic-integrity-and-ai-use)
 
 [![Join Slack](https://img.shields.io/badge/Join-Slack-blue?logo=slack)](https://join.slack.com/t/musa650spring2025/shared_invite/zt-2xlntepg4-mhmTgu10OlqMA~vvznUChA)
 
 ## Overview
 
-Satellite remote sensing is the science of converting raw aerial imagery into actionable intelligence about the built and natural environment. In the context of city planning, this is applied to use cases such as building footprint extraction, multi-class object detection (e.g., cars), and land cover/land use classification. This course will provide you the foundation necessary for application of machine learning algorithms on satellite imagery. We will cover the core concepts of machine learning, including supervised and unsupervised learning; model selection; feature engineering; and performance evaluation. The course will cover traditional methods and algorithms as well as recent deep learning methods using convolutional neural networks and their application to semantic image segmentation.
+Satellite remote sensing is the science of converting raw aerial imagery into actionable intelligence about the built and natural environment. In city planning, this includes applications like building footprint extraction, land cover classification, and change detection. This course will provide you with the foundation necessary to apply machine learning algorithms to satellite imagery using a modern, cloud-native spatial data stack. We will cover supervised and unsupervised learning, model selection, feature engineering, and performance evaluation, as well as deep learning approaches using convolutional neural networks for semantic image segmentation. The course combines lectures, hands-on labs, real-world case studies, and guest speakers to give you a sense of the scope of the field.
 
 ### Instructors
 
@@ -18,15 +18,33 @@ Satellite remote sensing is the science of converting raw aerial imagery into ac
 
 ## Objectives
 
-The main learning goal of this class is to provide you with the foundational context and skills necessary for use in machine learning applied to remote sensing and enable you to independently pursue further study and work. We will focus specifically on remote sensing use cases in city planning, with a special emphasis on deep learning applications (e.g., CNNs). You will learn how to define a problem, select appropriate algorithms and tools, design and implement their machine learning models, and apply and validate their models on new datasets.
+The main goal of this class is to give you the conceptual foundation and practical skills to apply machine learning to remote sensing problems independently. You will learn to access and prepare satellite imagery using modern cloud-native tools such as the STAC API, define problems, select appropriate algorithms, build machine learning models, and validate them on new datasets. Given the ready availability of AI-generated code, we emphasize understanding why methods work over memorizing syntax. Our priority is ensuring you can adapt to new tools and methods as the field evolves.
 
-Given the ready availability of code documentation and AI-generated code, we will emphasize a strong conceptual understanding of remote sensing and machine learning fundamentals. This is a hands-on class involving multiple examples that will be explained and run real-time during the lectures. The course will primarily use Python-based implementations of remote sensing, such as `pystac` and `geemap`, although you will be encouraged to explore other relevant tools on your own.
-
-## Format
+## Schedule
 
 The course will be divided into two halves. In the first half of the semester, we will focus on building a strong foundational understanding of remote sensing and machine learning. The second half of the semester will delve into more advanced and specific use cases, such as deep learning and data pipelines.
 
-Most weeks, we will divide class time evenly between lectures and labs. Lectures will focus on a conceptual overview of the material, while labs will offer hands-on time to work on pairs or groups on assignments designed to build remote sensing skills applied to planning-specific use cases, including in-class exercises, homeworks, and the final project.
+Most weeks, we will divide class time evenly between lectures and labs. Lectures will focus on a conceptual overview of the material, while labs will offer hands-on time to work on pairs or groups on assignments designed to build remote sensing skills applied to planning-specific use case.
+
+MUSA 650 meets in person on Thursday from 8:30am-11:29am in Meyerson B13. In person participation is required. Online participation is an option only in case of a valid excuse with approval.
+
+| Week # | Date | Topic | Assignment | Lab |
+|--------|------|-------|------------|-------|
+| 1 | 1/15 | Course intro, overview of remote sensing and applications in city planning | None | | 
+| 2 | 1/22 | Data sources and IO (Landsat, Sentinel, STAC API, `pystac-client`, etc.) | None | |
+| 3 | 1/29 | Non-ML approaches to remote sensing (indices, thresholds, change detection, time series) | None | [Valencia Flooding](week03/README.md) | 
+| 4 | 2/5 | Introduction to machine learning (unsupervised and supervised) | None | |
+| 5 | 2/12 | Supervised learning for land cover classification, Part 1: training data, cross-validation, method and model selection | None | |
+| 6 | 2/19 | Supervised learning for land cover classification, Part 2: validation, evaluation, multi-class classification, parameter optimization | None | |
+| 7 | 2/26 | | Midterm Exam | [Google Earth Engine](week07/README.md) |
+| Spring Break | | | |
+| 8 | 3/12 | Fundamentals of deep learning | None | | 
+| 9 | 3/19 | Recent advances in deep learning: literature review and paper discussion | Final Project Proposal Due (LINK TO DO) | | 
+| 10 | 3/26 | Convolutional neural networks for image classification; UNet architecture for semantic segmentation | None | |
+| 11 | 4/2 | Case study: deep learning applications (Guest: Tristan) | EuroSat Assignment Due (LINK TO DO) | None | 
+| 12 | 4/9 | Case study: predictive modeling using deep learning (Guest: TBD) | None | None |
+| 13 | 4/16 | Big data and machine learning: techniques, tools, challenges, future directions | Final Exam | None |
+| 14 | 4/23 | Final project presentations | Final Project Due (LINK TO DO) | None |
 
 ## Tips for Success
 
@@ -38,13 +56,12 @@ Based on our experiences teaching (and taking!) this class in previous years, he
 
 3. Come ready to explore! Remote sensing and machine learning are massive domains--more than we can possibly cover in one semester. This class is meant to be a launching pad; we hope you'll leave it with a sense of excitement and curiosity about where else remote sensing and machine learning can take you.
 
-## Grading
-
-There are five assignments over the course of the semester: [three homeworks](assignments/), each worth 10% of the overall grade (for a total of 30%), one [final project proposal](assignments/FINAL_PROJECT_PROPOSAL.md) worth 10%, and one [final project](assignments/FINAL_PROJECT.md) worth 40% of the overall grade. A further 20% of the grade is based on participation. For more information, please see the rubrics included with each assignment.
+## Assignments
+There are two exams and two projects over the course of the semester. The midterm and final exams are each worth 20%. The EuroSat assignment is worth 20%. The final project is worth 40% total: 10% for the proposal and 30% for the final submission. For more information, please see the rubrics included with each assignment.
 
 Homework can be started at any time but is due by the end of class by the date indicated on the syllabus. Unexcused late homework will not be accepted.
 
-## Submission Guidelines
+### Submissions
 
 **All assignments must be completed in groups of 2-3 students.** One member of the group should submit on behalf of everyone, making sure to include all group members' names at the top of the notebook.
 
@@ -83,28 +100,6 @@ This course relies on the use of Python and various related packages. All softwa
 5. Clone your fork to your local machine in the location of your choice.
 6. In VSCode, open the cloned repository. Open a Git Bash terminal and run `uv sync` to install the dependencies.
 7. That's it! You're now set up.
-
-## Schedule
-
-MUSA 650 meets in person on Thursday from 8:30am-11:29am in Meyerson B13. In person participation is required. Online participation is an option only in case of a valid excuse with approval.
-
-| Week # | Date | Topic | Assignment | Lab |
-|--------|------|-------|------------|-------|
-| 1 | 1/15 | Course intro, overview of remote sensing and applications in city planning | None | | 
-| 2 | 1/22 | Data sources and IO (Landsat, Sentinel, STAC API, `pystac-client`, etc.) | None | |
-| 3 | 1/29 | Non-ML approaches to remote sensing (indices, thresholds, change detection, time series) | None | [Valencia Flooding](week03/README.md) | 
-| 4 | 2/5 | Introduction to machine learning (unsupervised and supervised) | None | |
-| 5 | 2/12 | Supervised learning for land cover classification, Part 1: training data, cross-validation, method and model selection | None | |
-| 6 | 2/19 | Supervised learning for land cover classification, Part 2: validation, evaluation, multi-class classification, parameter optimization | None | |
-| 7 | 2/26 | | Midterm Exam | Google Earth Engine lab (LINK TO DO) |
-| Spring Break | | | |
-| 8 | 3/12 | Fundamentals of deep learning | None | | 
-| 9 | 3/19 | Recent advances in deep learning: literature review and paper discussion | Final Project Proposal Due (LINK TO DO) | | 
-| 10 | 3/26 | Convolutional neural networks for image classification; UNet architecture for semantic segmentation | None | |
-| 11 | 4/2 | Case study: deep learning applications (Guest: Tristan) | EuroSat Assignment Due (LINK TO DO) |
-| 12 | 4/9 | Case study: predictive modeling using deep learning (Guest: TBD) | None | |
-| 13 | 4/16 | Big data and machine learning: techniques, tools, challenges, future directions | Final Exam (LINK TO DO) | None |
-| 14 | 4/23 | Final project presentations | Final Project Due (LINK TO DO) | None |
 
 ## Academic Integrity and AI Use
 
