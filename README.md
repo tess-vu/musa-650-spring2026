@@ -90,21 +90,21 @@ MUSA 650 meets in person on Thursday from 8:30am-11:29am in Meyerson B13. In per
 
 | Week # | Date | Topic | Assignment | Lab |
 |--------|------|-------|------------|-------|
-| 1 | 1/15 | Course intro, overview of remote sensing and applications in city planning | |
-| 2 | 1/22 | Data sources and IO (Landsat, Sentinel, STAC API, `pystac-client`, etc.) | |
-| 3 | 1/29 | Non-ML approaches to remote sensing (indices, thresholds, change detection, time series) | |
-| 4 | 2/5 | Introduction to machine learning (unsupervised and supervised) | |
-| 5 | 2/12 | Supervised learning for land cover classification, Part 1: training data, cross-validation, method and model selection | |
-| 6 | 2/19 | Supervised learning for land cover classification, Part 2: validation, evaluation, multi-class classification, parameter optimization | |
+| 1 | 1/15 | Course intro, overview of remote sensing and applications in city planning | None | | 
+| 2 | 1/22 | Data sources and IO (Landsat, Sentinel, STAC API, `pystac-client`, etc.) | None | |
+| 3 | 1/29 | Non-ML approaches to remote sensing (indices, thresholds, change detection, time series) | None | [Valencia Flooding](week03/README.md) | 
+| 4 | 2/5 | Introduction to machine learning (unsupervised and supervised) | None | |
+| 5 | 2/12 | Supervised learning for land cover classification, Part 1: training data, cross-validation, method and model selection | None | |
+| 6 | 2/19 | Supervised learning for land cover classification, Part 2: validation, evaluation, multi-class classification, parameter optimization | None | |
 | 7 | 2/26 | | Midterm Exam | Google Earth Engine lab (LINK TO DO) |
 | Spring Break | | | |
-| 8 | 3/12 | Fundamentals of deep learning | |
-| 9 | 3/19 | Recent advances in deep learning: literature review and paper discussion | Final Project Proposal Due (LINK TO DO) |
-| 10 | 3/26 | Convolutional neural networks for image classification; UNet architecture for semantic segmentation | |
+| 8 | 3/12 | Fundamentals of deep learning | None | | 
+| 9 | 3/19 | Recent advances in deep learning: literature review and paper discussion | Final Project Proposal Due (LINK TO DO) | | 
+| 10 | 3/26 | Convolutional neural networks for image classification; UNet architecture for semantic segmentation | None | |
 | 11 | 4/2 | Case study: deep learning applications (Guest: Tristan) | EuroSat Assignment Due (LINK TO DO) |
-| 12 | 4/9 | Case study: predictive modeling using deep learning (Guest: TBD) | |
-| 13 | 4/16 | Big data and machine learning: techniques, tools, challenges, future directions | Final Exam (LINK TO DO) |
-| 14 | 4/23 | Final project presentations | Final Project Due (LINK TO DO) |
+| 12 | 4/9 | Case study: predictive modeling using deep learning (Guest: TBD) | None | |
+| 13 | 4/16 | Big data and machine learning: techniques, tools, challenges, future directions | Final Exam (LINK TO DO) | None |
+| 14 | 4/23 | Final project presentations | Final Project Due (LINK TO DO) | None |
 
 ## Academic Integrity and AI Use
 

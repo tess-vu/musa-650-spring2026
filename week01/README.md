@@ -6,5 +6,6 @@ Class presentations:
 - Lab: 
 - Install everything
 - Answer questions about syllabus, etc.
+- Intro survey
 
 projectpythia.org/landsat-ml-cookbook/
