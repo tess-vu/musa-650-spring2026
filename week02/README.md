@@ -10,7 +10,7 @@ You will not be given any code. Instead, you will work from documentation and tu
 
 **Study area**: Singapore  
 **Time period**: 2025 (January through December)  
-**Dataset**: Landsat Collection 2 Level-2
+**Dataset**: Landsat Collection 2 Level-2 
 **Goal**: Produce and export a cloud-free true-color composite
 
 #### Reference Materials
@@ -28,19 +28,17 @@ This tutorial is based on the following resources. You are not limited to using 
 1. Connect to the Planetary Computer STAC catalog using `pystac_client`.
 
 2. Find the Landsat Collection 2 Level-2 dataset. Per [Project Pythia](https://projectpythia.org/landsat-ml-cookbook/notebooks/data-ingestion-geospatial/):
-> We’ll use the landsat-c2-l2 dataset, which stands for Collection 2 Level-2. It contains data from several landsat missions and has better data quality than Level 1 (landsat-c2-l1). Microsoft Planetary Computer has descriptions of Level 1 and Level 2, but a direct and succinct comparison can be found in this community post, and the information can be verified with USGS.
+> We’ll use the `landsat-c2-l2` dataset, which stands for Collection 2 Level-2. It contains data from several landsat missions and has better data quality than Level 1 (`landsat-c2-l1`). Microsoft Planetary Computer has descriptions of [Level 1](https://planetarycomputer.microsoft.com/dataset/landsat-c2-l1) and [Level 2](https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2), but a direct and succinct comparison can be found in [this community post](https://gis.stackexchange.com/questions/439767/landsat-collections), and the information can be verified with [USGS](https://www.usgs.gov/landsat-missions/landsat-collection-2).
 
-Explore the metadata by simply examining the collection object. What's the description? STAC version? Check out the links, the ID, the license, keywords, etc.
-
-3. List the assets available in this collection. What bands are available? What other assets (e.g., QA bands, thumbnails) are included?
+3. Explore the metadata by simply examining the collection object. What's the description? STAC version? Check out the links, the ID, the license, keywords, etc. List the assets available in this collection. What bands are available? What other assets (e.g., QA bands, thumbnails) are included?
 
 #### Part 2: Query for imagery over your study area and verify the results make sense.
 
-4. Define a bounding box for Singapore. We deliberately chose Singapore because it's small enough to fit within a single Landsat tile—this simplifies loading.
+4. Define a bounding box for Singapore. Hint: we deliberately chose Singapore because it's small enough to fit within a single Landsat tile; this simplifies loading.
 
-5. Set up a Dask cluster for parallel processing. Use `odc.stac.configure_rio(cloud_defaults=True, client=client)` to configure rasterio for efficient cloud COG access. This step is critical—without it, loading data from the cloud will be extremely slow.
+5. Set up a Dask cluster for parallel processing. Use `odc.stac.configure_rio(cloud_defaults=True, client=client)` to configure `rasterio` for efficient cloud COG access. This step is critical—without it, loading data from the cloud will be extremely slow.
 
-6. Search for Landsat scenes within your bounding box for 2025. Filter for scenes with less than 50% cloud cover. (Singapore is cloudy—you may need to adjust this threshold to get enough scenes.)
+6. Search for Landsat scenes within your bounding box for 2025. Filter for scenes with less than 50% cloud cover. (Singapore is cloudy; you may need to adjust this threshold to get enough scenes.)
 
 7. Preview your results. How many scenes did you get? Look at some thumbnails to verify you're getting what you expect.
 
