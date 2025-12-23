@@ -11,3 +11,4 @@ Things I want to talk about:
 - How does this build on previous weeks? (e.g., indices, data reshaping, classification, XGBoost versus deep learning
 - What are the strengths of different model types?) (Maybe have them add xgboost, for example, or deep learning) What are the limitations? What about explainability?
 - What about balance in training classes?
+- What do you think the impact of adding more classes would be?
