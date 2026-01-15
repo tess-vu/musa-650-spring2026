@@ -2,7 +2,17 @@
 
 For this final project, you will design and implement a machine learning-based remote sensing solution to address a specific problem in urban planning. Building on your proposal, you will develop a working solution, evaluate its performance, and present your work in a professional lightning talk.
 
-Include the names of all group members at the top of your notebook.
+### Submission Guidelines
+
+**All assignments must be completed in groups of 2-3 students.** One member of the group should submit on behalf of everyone, making sure to include all group members' names at the top of the notebook.
+
+Your assignment should be submitted via a pull request to the main branch of this repository. Please make sure it is in the `assignments` subdirectory, titled `final_project.ipynb`, with any your class presentation and any additional files included in a subfolder named `final_project_files`. Additionally:
+- Your notebook must contain the complete assignment instructions, followed by the relevant code chunks
+- Your notebook must include group members' names and submission date
+- All code must be well-formatted with appropriate code chunks (no overly long code blocks)
+- All code must be linted and formatted using [`ruff`](https://docs.astral.sh/ruff/) before submission
+
+_A note on visualizations_: If your your analysis includes interactive visualizations (e.g., `geemap`), please include a .gif of you clicking through each layer in your map. Embed this .gif in your notebook and include it in your submission folder. Do not include the interactive widget itself, as this often doesn't render well on GitHub.
 
 ### Project Requirements
 

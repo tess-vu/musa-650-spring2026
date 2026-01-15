@@ -4,14 +4,13 @@ In this assignment, you will explore land use and land cover (LULC) classificati
 
 ## Submission Guidelines
 
-Please follow the [general submission guidelines](../../README.md#submission-guidelines) in the course README. For this assignment, you must include the following files in your submission:
+**All assignments must be completed in groups of 2-3 students.** One member of the group should submit on behalf of everyone, making sure to include all group members' names at the top of the notebook.
 
-```
-assignments/
-  submissions/
-    HW3/
-      HW3.ipynb
-```
+Your assignment should be submitted via a pull request to the main branch of this repository. Please make sure it is in the `assignments` subdirectory, titled `eurosat.ipynb`, with any additional files included in a subfolder named `eurosat_files`. Additionally:
+- Your notebook must contain the complete assignment instructions, followed by the relevant code chunks
+- Your notebook must include group members' names and submission date
+- All code must be well-formatted with appropriate code chunks (no overly long code blocks)
+- All code must be linted and formatted using [`ruff`](https://docs.astral.sh/ruff/) before submission
 
 ## 1. Data Loading, Processing, and Exploration
 

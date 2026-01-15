@@ -52,31 +52,8 @@ There are two exams and two projects over the course of the semester. The midter
 
 Homework can be started at any time but is due by the end of class by the date indicated on the syllabus. Unexcused late homework will not be accepted.
 
-### Submissions
-
-**All assignments must be completed in groups of 2-3 students.** One member of the group should submit on behalf of everyone, making sure to include all group members' names at the top of the notebook.
-
-**Notebook Requirements:**
-
-- All Jupyter notebooks must include the assignment number in the filename
-- All notebooks must contain the complete assignment instructions, followed by the relevant code chunks
-- All notebooks must include group members' names and submission date
-- All code must be well-formatted with appropriate code chunks (no overly long code blocks)
-- All code must be linted and formatted using [`ruff`](https://docs.astral.sh/ruff/) before submission
-
-**Submission Structure:**
-Assignments should be submitted via a pull request to the main branch of this repository with the following structure:
-
-```
-assignments/
-  submissions/
-    [ASSIGNMENT_NAME]/
-      [ASSIGNMENT_NAME].ipynb
-      [other required files]
-```
-
-**Visualization Requirements:**
-For assignments that include interactive visualizations (e.g., `geemap`), please include a .gif of you clicking through each layer in your map. Embed this .gif in your notebook and include it in your submission folder. Do not include the interactive widget itself, as this often doesn't render well on GitHub.
+**All assignments must be completed in groups of 2-3 students.** 
+One member of the group should submit on behalf of everyone.
 
 ## Software
 
