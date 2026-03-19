@@ -2,8 +2,4 @@ data/
 *.pt
 *.tif
 week*
-week02/solutions.ipynb
-week03/solutions.ipynb
-week04/solutions.ipynb
-week05/solutions.ipynb
-week06/solutions.ipynb
+.venv
