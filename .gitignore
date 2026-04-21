@@ -1,5 +1,9 @@
-data/
-*.pt
-*.tif
-week*
+# Cache
 .venv
+assignments/.ruff_cache/
+week03/__pycache__/
+
+# Data
+assignments/EuroSAT_MS/
+assignments/EuroSAT_RGB/
+assignments/final_project_files/data/
